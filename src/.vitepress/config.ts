@@ -45,6 +45,11 @@ export default defineConfig({
 
     sidebar: [],
 
+    sitemap: {
+      hostname: 'https://floppypanda.ch',
+      lastmodDateOnly: true,
+    },
+
     markdown: {
       image: {
         lazyLoading: true
