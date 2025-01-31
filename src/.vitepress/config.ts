@@ -25,6 +25,7 @@ export default defineConfig({
         github: 'i-[carbon/logo-github]',
         vue: 'i-[carbon/logo-vue]',
         'web development': 'i-[carbon/earth-filled]',
+        '3d printing': 'i-[carbon/3d-print-mesh]',
       },
       feed: {
         baseUrl: 'https://blog.floppypanda.ch/blog',

@@ -90,6 +90,6 @@
 }
 
 /* Make links more obvious */
-a:not(.VPNavBarMenuLink):not(.title) {
+/* a:not(.VPNavBarMenuLink):not(.title) {
   text-decoration: underline;
-}
+} */
