@@ -46,7 +46,7 @@ export default defineConfig({
     sidebar: [],
 
     sitemap: {
-      hostname: 'https://floppypanda.ch',
+      hostname: 'https://blog.floppypanda.ch',
       lastmodDateOnly: true,
     },
 
