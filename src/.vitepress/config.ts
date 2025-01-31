@@ -59,11 +59,11 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'twitter',
-        link: 'https://bsky.app/floppypanda.ch',
+        link: 'https://bsky.floppypanda.ch',
       },
       {
         icon: 'mastodon',
-        link: 'https://mastodon.social/@floppypanda',
+        link: 'https://mastodon.floppypanda.ch',
       },
     ],
   },
