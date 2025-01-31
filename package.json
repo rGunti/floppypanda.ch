@@ -1,0 +1,25 @@
+{
+  "name": "how-did-this-work",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jcamp/vitepress-blog-theme": "0.3.0",
+    "vitepress": "1.6.3",
+    "vue": "^3.4.31"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}
