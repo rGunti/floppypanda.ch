@@ -1,4 +1,4 @@
-import { defineConfig } from '@jcamp/vitepress-blog-theme/config'
+import { defineConfig, genFeed, processData } from '@jcamp/vitepress-blog-theme/config'
 
 const PAGE_DATA = {
   title: 'FloppyPanda',
@@ -26,11 +26,20 @@ export default defineConfig({
         vue: 'i-[carbon/logo-vue]',
         'web development': 'i-[carbon/earth-filled]',
       },
+      feed: {
+        baseUrl: 'https://blog.floppypanda.ch/blog',
+        outputPath: '/feed.rss',
+      }
     },
     search: {
       provider: 'local',
     },
     nav: [
+      {
+        text: 'Blog',
+        link: '/blog',
+        activeMatch: '/blog',
+      },
       {
         text: 'Tags',
         link: '/blog/tags',
@@ -44,11 +53,6 @@ export default defineConfig({
     ],
 
     sidebar: [],
-
-    sitemap: {
-      hostname: 'https://blog.floppypanda.ch',
-      lastmodDateOnly: true,
-    },
 
     markdown: {
       image: {
@@ -67,4 +71,9 @@ export default defineConfig({
       },
     ],
   },
+
+  buildEnd: genFeed,
+  async transformPageData(pageData, ctx) {
+    await processData(pageData, ctx)
+  },  
 })
