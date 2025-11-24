@@ -3,6 +3,7 @@ date: 2025-11-24
 title: 'How I Automated my Homelab'
 tags:
   - homelab
+comment: true
 ---
 
 I've been homelabbing since pretty much forever at this point. From the first file server running on an ancient Thinkpad with a USB drive attached to my multi-node Proxmox cluster, it's been quite the journey. But what arguably was one of the most significant upgrades to my homelab as a whole wasn't related to hardware, but software. Specifically: Automation!
